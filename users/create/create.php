@@ -39,14 +39,14 @@ try {
         ]);
         if ($checkUsername != null) {
             $response = [
-                'status' => 'success',
+                'status' => 'error',
                 'message' => 'Username already exists'
             ];
             http_response_code(422);
             echo json_encode($response);
         } else if($checkEmail != null) {
             $response = [
-                'status' => 'success',
+                'status' => 'error',
                 'message' => 'Email already exists'
             ];
             http_response_code(422);

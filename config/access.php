@@ -2,7 +2,7 @@
 
 error_reporting(0);
 $AUTH_USER = 'admin';
-$AUTH_PW = 'QzYRFykEDMZ9q5iwHDzbMgy3BNQ4b2fz';
+$AUTH_PW = 'QzYRFykEDMZ9q5iwHDzbMgy3BNQ4b2fz'; /** Make your own password (Optional using md5) */
 
 try {
     header('Cache-Control: no-cache, must-revalidate, max-age=0');
