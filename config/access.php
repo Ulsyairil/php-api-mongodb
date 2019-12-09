@@ -14,6 +14,11 @@ try {
         http_response_code(200);
         header('HTTP/1.1 401 Authorization Required');
         header('WWW-Authenticate: Basic realm="Access denied"');
+        $response = [
+            'status' => 'error',
+            'message' => "You don't have access this site"
+        ];
+        echo json_encode($response);
         exit;
     }
 } catch (\Exception $error) {
